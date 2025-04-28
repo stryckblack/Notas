@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Par ou Ímpar</title>
+</head>
+<body>
+    <h1>Verificador de Par ou Ímpar</h1>
+    <p>Insira um número:</p>
+    <input type="text" id="numero">
+    <button id="verificarBotao">Verificar</button>
+    
+    <script type="text/javascript">
+        document.getElementById("verificarBotao").addEventListener("click", function() {
+            let nota = document.getElementById("numero").value;
+            
+            // Converte o valor para número inteiro
+            nota = parseInt(nota);
+
+            // Verifica se o número é par ou ímpar
+            if (isNaN(nota)) {
+                alert("Por favor insira um numero de sua nota")
+            } else if (nota >= 7) 
+            {
+                alert('Aprovado')
+            } if (nota >=4 && nota <7) {
+                alert('Voce esta de recuperaçao')
+            }
+            else if  (nota < 4 ){
+                alert('Voce esta reprovado')
+            }
+            if (nota == 10){
+                alert('PARABENS voce tirou a melhor nota')
+            }
+
+
+
+            })
+
+    </script>
+
+
+</body>
+</html>
